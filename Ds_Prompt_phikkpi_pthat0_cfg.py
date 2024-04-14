@@ -12,7 +12,6 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
                           EvtGen130 = cms.untracked.PSet(
                                  decay_table = cms.string('GeneratorInterface/EvtGenInterface/data/DECAY_2014_NOLONGLIFE.DEC'),
                                  particle_property_file = cms.FileInPath('GeneratorInterface/EvtGenInterface/data/evt_2014.pdl'),
-                                 user_decay_file = cms.vstring('GeneratorInterface/ExternalDecays/data/D0_Kpi.dec'),
                                  list_forced_decays = cms.vstring('MyD_s+','MyD_s-'),
                                  operates_on_particles = cms.vint32(),
                                  convertPythiaCodes = cms.untracked.bool(False),
